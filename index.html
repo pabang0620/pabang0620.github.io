@@ -4,44 +4,109 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>네코랩 - 모바일 게임</title>
-<meta name="description" content="네코랩은 웹과 안드로이드에서 함께 즐기는 모바일 게임을 만드는 개인 개발 브랜드입니다. 냥이 성문 수비대를 지금 해보세요.">
+<meta name="description" content="네코랩은 웹과 안드로이드에서 함께 즐기는 모바일 게임을 만드는 개인 개발 브랜드입니다. 게임 목록과 이용약관, 개인정보처리방침 같은 정책을 한곳에 모았습니다.">
 <link rel="canonical" href="https://pabang0620.github.io/">
+<link rel="icon" href="nyangi-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="네코랩 - 모바일 게임">
-<meta property="og:description" content="웹과 안드로이드에서 함께 즐기는 모바일 게임. 냥이 성문 수비대.">
+<meta property="og:description" content="웹과 안드로이드에서 함께 즐기는 모바일 게임, 그리고 서비스 정책 모음.">
 <meta property="og:url" content="https://pabang0620.github.io/">
+<meta property="og:image" content="https://pabang0620.github.io/hero.jpg">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"네코랩","alternateName":"nekolab","url":"https://pabang0620.github.io/"}
 </script>
 <style>
-:root{--bg:#fff;--fg:#1c2233;--mut:#5b6478;--line:#e3e7ef;--ac:#2f5bd8}
-@media (prefers-color-scheme:dark){:root{--bg:#121a33;--fg:#eef1fa;--mut:#a3adc7;--line:#2a3558;--ac:#8fb0ff}}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 system-ui,-apple-system,"Noto Sans KR",sans-serif}
-main{max-width:640px;margin:0 auto;padding:40px 16px}
-h1{font-size:28px;margin:0 0 8px}h2{font-size:18px;margin:32px 0 8px}
-p{color:var(--mut);margin:0 0 12px}
+:root{--bg:#f4f6fb;--card:#fff;--fg:#1b2238;--mut:#5a6480;--line:#e2e6f0;--ac:#2f5bd8;--acfg:#fff;--chip:#eef2ff;--chipfg:#2f5bd8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1426;--card:#171f38;--fg:#eef1fa;--mut:#a3adc7;--line:#27325a;--ac:#6f93ff;--acfg:#0e1426;--chip:#202b4d;--chipfg:#a9c0ff}}
+:root[data-theme="dark"]{--bg:#0e1426;--card:#171f38;--fg:#eef1fa;--mut:#a3adc7;--line:#27325a;--ac:#6f93ff;--acfg:#0e1426;--chip:#202b4d;--chipfg:#a9c0ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Noto Sans KR","Malgun Gothic",sans-serif;-webkit-text-size-adjust:100%}
 a{color:var(--ac)}
-.card{border:1px solid var(--line);border-radius:10px;padding:16px;margin:12px 0}
-.card h3{margin:0 0 6px;font-size:18px}
-ul{padding-left:20px;color:var(--mut)}
+.hero{position:relative;min-height:300px;display:flex;align-items:flex-end;background:#16203f url(hero.jpg) center/cover}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,20,38,.15),rgba(14,20,38,.88))}
+.hero-in{position:relative;width:100%;max-width:880px;margin:0 auto;padding:56px 16px 28px;color:#fff}
+.hero h1{margin:0 0 6px;font-size:32px;letter-spacing:-.5px}
+.hero p{margin:0;color:#dfe6fb;max-width:520px}
+main{max-width:880px;margin:0 auto;padding:28px 16px 48px}
+h2{font-size:20px;margin:36px 0 14px}
+h2:first-child{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media (max-width:640px){.grid{grid-template-columns:1fr}.hero h1{font-size:26px}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.top{display:flex;gap:14px;align-items:center}
+.ic{width:60px;height:60px;border-radius:14px;flex:none;object-fit:cover;background:var(--chip)}
+.mono{width:60px;height:60px;border-radius:14px;flex:none;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:22px;color:var(--chipfg);background:var(--chip)}
+.card h3{margin:0;font-size:18px}
+.sub{margin:0;color:var(--mut);font-size:14px}
+.desc{margin:0;color:var(--mut);font-size:15px}
+.btn{display:inline-block;margin-top:auto;padding:10px 16px;border-radius:10px;background:var(--ac);color:var(--acfg);text-decoration:none;font-weight:600;text-align:center}
+.links{display:flex;flex-wrap:wrap;gap:8px}
+.links a{padding:5px 11px;border-radius:999px;background:var(--chip);color:var(--chipfg);text-decoration:none;font-size:13px}
+.links a:hover,.btn:hover{filter:brightness(1.08)}
+.badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;background:var(--chip);color:var(--chipfg);margin-left:6px;vertical-align:middle}
+footer{border-top:1px solid var(--line);padding:22px 16px 40px;text-align:center;color:var(--mut);font-size:13px}
 </style>
 </head>
 <body>
-<main>
+<header class="hero">
+<div class="hero-in">
 <h1>네코랩</h1>
 <p>웹과 안드로이드에서 함께 즐기는 모바일 게임을 만듭니다</p>
-<h2>게임</h2>
-<div class="card">
-<h3>냥이 성문 수비대</h3>
-<p>고양이 영웅들로 성문을 지키는 타워 디펜스입니다 레이드와 친구 협동을 즐겨 보세요</p>
-<a href="https://pabang0620.github.io/nyangi-gate-play/">웹에서 바로 플레이</a>
 </div>
-<h2>정책</h2>
-<ul>
-<li><a href="https://pabang0620.github.io/nyangi-gate-play/policy/terms.html">이용약관</a></li>
-<li><a href="https://pabang0620.github.io/nyangi-gate-play/policy/privacy.html">개인정보처리방침</a></li>
-<li><a href="https://pabang0620.github.io/nyangi-gate-play/policy/refund.html">유료 결제와 환불 안내</a></li>
-</ul>
+</header>
+<main>
+<h2>게임</h2>
+<div class="grid">
+
+<section class="card">
+<div class="top"><img class="ic" src="nyangi-icon.png" alt="" width="60" height="60"><div><h3>냥이 성문 수비대</h3><p class="sub">고양이 타워 디펜스</p></div></div>
+<p class="desc">고양이 영웅들로 성문을 지키는 타워 디펜스입니다 레이드와 친구 협동을 즐겨 보세요</p>
+<div class="links">
+<a href="https://pabang0620.github.io/nyangi-gate-play/policy/terms.html">이용약관</a>
+<a href="https://pabang0620.github.io/nyangi-gate-play/policy/privacy.html">개인정보처리방침</a>
+<a href="https://pabang0620.github.io/nyangi-gate-play/policy/refund.html">결제와 환불</a>
+<a href="https://pabang0620.github.io/nyangi-gate-play/policy/operation.html">운영정책</a>
+</div>
+<a class="btn" href="https://pabang0620.github.io/nyangi-gate-play/">웹에서 플레이</a>
+</section>
+
+<section class="card">
+<div class="top"><div class="mono">NB</div><div><h3>냥박자</h3><p class="sub">고양이 리듬 액션</p></div></div>
+<p class="desc">고양이와 박자를 맞추는 리듬 게임입니다</p>
+<div class="links">
+<a href="https://pabang0620.github.io/nyang-bakja-play/privacy.html">개인정보처리방침</a>
+</div>
+<a class="btn" href="https://pabang0620.github.io/nyang-bakja-play/">웹에서 플레이</a>
+</section>
+
+<section class="card">
+<div class="top"><div class="mono">dR</div><div><h3>dotRPG</h3><p class="sub">도트 RPG</p></div></div>
+<p class="desc">서비스 준비 중인 도트 RPG입니다 약관과 확률 정보를 먼저 공개합니다</p>
+<div class="links">
+<a href="https://pabang0620.github.io/dotrpg-policy/ko/terms.html">이용약관</a>
+<a href="https://pabang0620.github.io/dotrpg-policy/ko/privacy.html">개인정보처리방침</a>
+<a href="https://pabang0620.github.io/dotrpg-policy/ko/probability.html">확률 정보</a>
+<a href="https://pabang0620.github.io/dotrpg-policy/ko/paid.html">유료 상품</a>
+<a href="https://pabang0620.github.io/dotrpg-policy/ko/account-deletion.html">계정 삭제</a>
+</div>
+<a class="btn" href="https://pabang0620.github.io/dotrpg-policy/">정책 전체 보기</a>
+</section>
+
+<section class="card">
+<div class="top"><div class="mono">CK</div><div><h3>캐릿터 키우기</h3><p class="sub">육성 RPG</p></div></div>
+<p class="desc">캐릭터를 키워 가는 육성 RPG입니다 약관과 확률 정보를 공개합니다</p>
+<div class="links">
+<a href="https://pabang0620.github.io/starspire-policy/terms/">이용약관</a>
+<a href="https://pabang0620.github.io/starspire-policy/privacy/">개인정보처리방침</a>
+<a href="https://pabang0620.github.io/starspire-policy/probability/">확률 정보</a>
+<a href="https://pabang0620.github.io/starspire-policy/refund/">환불</a>
+<a href="https://pabang0620.github.io/starspire-policy/account-deletion/">계정 삭제</a>
+</div>
+<a class="btn" href="https://pabang0620.github.io/starspire-policy/">정책 전체 보기</a>
+</section>
+
+</div>
 </main>
+<footer>© 2026 네코랩 (nekolab)</footer>
 </body>
 </html>
