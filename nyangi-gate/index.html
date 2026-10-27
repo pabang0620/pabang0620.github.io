@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>냥이 성문 수비대: 고양이 디펜스</title>
+  <meta name="description" content="고양이 영웅과 탑으로 성문을 지키는 모바일 디펜스 RPG. 10장 54스테이지, 온라인 시즌 리그와 주간 공방전. 모든 스테이지는 결제 없이 깰 수 있어요.">
+  <meta name="theme-color" content="#1a1220">
+  <meta property="og:title" content="냥이 성문 수비대">
+  <meta property="og:description" content="고양이 영웅과 탑으로 성문을 지켜라냥!">
+  <meta property="og:image" content="https://pabang0620.github.io/nyangi-gate/a/hero.webp">
+  <meta property="og:url" content="https://pabang0620.github.io/nyangi-gate/">
+  <link rel="canonical" href="https://pabang0620.github.io/nyangi-gate/">
+  <link rel="icon" href="a/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
+  <link rel="preload" href="fonts/Jua-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="bar">
+  <a class="bar-brand" href="#top"><img src="a/icon.png" alt="" width="34" height="34">냥이 성문 수비대</a>
+  <nav aria-label="주요 메뉴">
+    <a href="#play">플레이</a>
+    <a href="#cats">영웅</a>
+    <a href="#adventure">모험</a>
+    <a href="#online">대결</a>
+    <a class="btn btn-main" href="https://pabang0620.github.io/nyangi-gate-play/" style="min-height:40px;padding:0 18px;font-size:1rem">바로 플레이</a>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="hero-art">
+      <img src="a/hero.webp" alt="성벽 위에서 성문을 지키는 기사, 궁수, 마법사 고양이" width="780" height="1080" fetchpriority="high">
+    </div>
+    <div class="hero-text">
+      <h1>냥이<b>성문 수비대</b></h1>
+      <p class="hero-tag">성문을 지켜라냥!</p>
+      <p class="hero-sub">탑을 세우고, 고양이 영웅을 직접 움직여 몬스터를 막아 내는 디펜스 RPG예요. 몰려오는 슬라임 사이로 용암 화산의 보스까지, 성문이 뚫리기 전에 끝내세요.</p>
+      <div class="hero-cta">
+        <a class="btn btn-main" href="https://pabang0620.github.io/nyangi-gate-play/">웹에서 바로 하기
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5l5 5-5 5"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="https://play.google.com/store/apps/details?id=com.nyangi.gate">Google Play</a>
+      </div>
+      <p class="hero-note">무료 · 광고는 보고 싶을 때만 · 모든 스테이지 결제 없이 클리어</p>
+    </div>
+  </div>
+
+  <section class="play" id="play">
+    <div class="wrap play-grid">
+      <div>
+        <h2>손은 두 번,<br>머리는 한 번 더</h2>
+        <p class="lead">길가에 탑을 세우고, 위험한 곳엔 영웅이 달려가요. 자리가 정해져 있어서 어디에 무엇을 놓을지만 고민하면 돼요.</p>
+        <div class="steps">
+          <div>
+            <h3>탑을 세운다</h3>
+            <p>건설 자리를 누르고 탑을 고른 뒤, 한 번 더 누르면 확정이에요. 업그레이드도 같은 방식이에요.</p>
+          </div>
+          <div>
+            <h3>영웅을 움직인다</h3>
+            <p>땅을 누르면 영웅이 달려가요. 손을 떼고 3초가 지나면 AUTO로 돌아가서 알아서 싸워요.</p>
+          </div>
+          <div>
+            <h3>스킬과 봉화를 쓴다</h3>
+            <p>영웅 스킬, 봉화 낙하, 증원 병사를 원하는 위치에 떨어뜨려요. 배속과 자동 웨이브는 처음부터 무료예요.</p>
+          </div>
+        </div>
+      </div>
+      <figure class="shot">
+        <img src="a/battle.webp" alt="용암 화산 전투 화면. 용암 길 위로 도마뱀 몬스터가 몰려오고 탑과 영웅이 막고 있다" width="1600" height="900" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <section class="cats" id="cats">
+    <div class="wrap">
+      <div class="cats-head">
+        <h2>성벽 위의 세 마리</h2>
+        <p class="lead" style="margin:0">치즈, 구름, 까망. 직업도 성격도 다른 영웅이 각자의 스킬로 길을 지켜요.</p>
+      </div>
+      <div class="cat-row">
+        <div class="cat">
+          <img src="a/cat_knight.webp" alt="망토를 휘날리며 달려드는 기사 고양이 치즈" width="520" height="520" loading="lazy">
+          <h3>치즈</h3>
+          <p>검을 든 기사. 가장 앞에서 길을 지켜요.</p>
+        </div>
+        <div class="cat">
+          <img src="a/cat_mage.webp" alt="지팡이를 든 마법사 고양이 구름" width="520" height="503" loading="lazy">
+          <h3>구름</h3>
+          <p>얼리고 태우고 치유하는 마법사.</p>
+        </div>
+        <div class="cat">
+          <img src="a/cat_ranger.webp" alt="활을 든 궁수 고양이 까망" width="520" height="520" loading="lazy">
+          <h3>까망</h3>
+          <p>멀리서 한 방을 꽂는 궁수. 이 게임의 주인공 검은고양이예요.</p>
+        </div>
+      </div>
+      <p class="synergy">영웅은 Lv60까지 키우고, 연구 30종과 장비 강화로 더 단단해져요. 기절과 빙결 약점을 노리는 조합, 궁수의 폭딜, 마법사의 치유처럼 영웅끼리 맞물리는 시너지도 있어요.</p>
+    </div>
+  </section>
+
+  <section class="adv" id="adventure">
+    <div class="wrap">
+      <h2>푸른 들판에서<br>시간의 탑까지</h2>
+      <p class="lead">10장 54스테이지. 장마다 거대한 보스와 얼고, 숨고, 사라지는 몬스터가 기다려요. 보스의 공격 예고를 보고 피하는 손맛이 있어요.</p>
+      <figure class="shot">
+        <img src="a/map.webp" alt="5장 타는 사막 월드맵. 스테이지가 별 3개 기준으로 이어져 있다" width="1600" height="900" loading="lazy">
+      </figure>
+      <p class="chapters-hint">장을 누르면 실제 전투 화면과 보스, 몬스터를 볼 수 있어요.</p>
+      <div class="chapters" role="list" aria-label="10개 장">
+        <button type="button" class="chapter" role="listitem" data-i="0" aria-haspopup="dialog" aria-label="1장 푸른 들판 자세히 보기"><img src="a/bg_grass.webp" alt="" loading="lazy"><span>푸른 들판</span></button>
+        <button type="button" class="chapter" role="listitem" data-i="1" aria-haspopup="dialog" aria-label="2장 어둠 숲 자세히 보기"><img src="a/bg_forest.webp" alt="" loading="lazy"><span>어둠 숲</span></button>
+        <button type="button" class="chapter" role="listitem" data-i="2" aria-haspopup="dialog" aria-label="3장 무너진 성채 자세히 보기"><img src="a/bg_ruin.webp" alt="" loading="lazy"><span>무너진 성채</span></button>
+        <button type="button" class="chapter" role="listitem" data-i="3" aria-haspopup="dialog" aria-label="4장 얼음 협곡 자세히 보기"><img src="a/bg_snow.webp" alt="" loading="lazy"><span>얼음 협곡</span></button>
+        <button type="button" class="chapter" role="listitem" data-i="4" aria-haspopup="dialog" aria-label="5장 타는 사막 자세히 보기"><img src="a/bg_desert.webp" alt="" loading="lazy"><span>타는 사막</span></button>
+        <button type="button" class="chapter" role="listitem" data-i="5" aria-haspopup="dialog" aria-label="6장 안개 늪 자세히 보기"><img src="a/bg_swamp.webp" alt="" loading="lazy"><span>안개 늪</span></button>
+        <button type="button" class="chapter" role="listitem" data-i="6" aria-haspopup="dialog" aria-label="7장 용암 화산 자세히 보기"><img src="a/bg_volcano.webp" alt="" loading="lazy"><span>용암 화산</span></button>
+        <button type="button" class="chapter" role="listitem" data-i="7" aria-haspopup="dialog" aria-label="8장 공허의 성 자세히 보기"><img src="a/bg_void.webp" alt="" loading="lazy"><span>공허의 성</span></button>
+        <button type="button" class="chapter" role="listitem" data-i="8" aria-haspopup="dialog" aria-label="9장 하늘 정원 자세히 보기"><img src="a/bg_sky.webp" alt="" loading="lazy"><span>하늘 정원</span></button>
+        <button type="button" class="chapter" role="listitem" data-i="9" aria-haspopup="dialog" aria-label="10장 시간의 탑 자세히 보기"><img src="a/bg_clock.webp" alt="" loading="lazy"><span>시간의 탑</span></button>
+      </div>
+      <div class="mobs" aria-hidden="true">
+        <img src="a/e_slime.webp" alt="" loading="lazy">
+        <img src="a/e_goblin.webp" alt="" loading="lazy">
+        <img src="a/e_orc.webp" alt="" loading="lazy">
+        <img src="a/e_skeleton.webp" alt="" loading="lazy">
+        <img src="a/e_frostwolf.webp" alt="" loading="lazy">
+        <img src="a/e_golem.webp" alt="" loading="lazy">
+        <img src="a/e_lavagolem.webp" alt="" loading="lazy">
+        <img src="a/e_voidknight.webp" alt="" loading="lazy">
+      </div>
+      <p class="mobs-note">영웅 난이도에선 적 체력이 최대 2배가 되고, 3성은 스테이지마다 다른 조건을 지켜야 해요.</p>
+    </div>
+  </section>
+
+  <section class="online" id="online">
+    <div class="wrap online-grid">
+      <figure class="shot">
+        <img src="a/league.webp" alt="무한의 성벽 도전 화면. 주간 구간 보상과 온라인 시즌 리그 순위가 보인다" width="1600" height="900" loading="lazy">
+      </figure>
+      <div>
+        <h2>다른 냥이들과<br>겨뤄요</h2>
+        <p class="lead">혼자 즐겨도 되고, 붙고 싶을 땐 바로 붙어요.</p>
+        <div class="modes">
+          <div>
+            <h3>시즌 리그</h3>
+            <p>같은 등급 30명과 2주 동안 겨뤄요. 브론즈에서 마스터까지 올라가 보세요.</p>
+          </div>
+          <div>
+            <h3>주간 공방전</h3>
+            <p>모두가 같은 지도, 같은 웨이브, 같은 제한으로 달려요. 실력만 남는 주간 랭킹이에요.</p>
+          </div>
+          <div>
+            <h3>레이드와 토벌전</h3>
+            <p>최대 4명이 실시간으로 보스를 잡고, 서버 전체가 월드 보스에 피해를 모아요.</p>
+          </div>
+          <div>
+            <h3>무한의 성벽</h3>
+            <p>매주 바뀌는 규칙으로 끝없이 막아요. 기록은 명예의 전당에 남아요.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fair" id="fair">
+    <div class="wrap fair-grid">
+      <div>
+        <h2>결제 없이도<br>끝까지 가요</h2>
+        <p class="lead">지갑을 열지 않아도 막히지 않게 만들었어요.</p>
+        <ul>
+          <li>
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>
+            <span><b>모든 스테이지를 무과금으로</b> 클리어할 수 있어요.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>
+            <span><b>AUTO, 자동 웨이브, 2배속</b>은 무료예요.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>
+            <span><b>광고는 보상형만</b>, 보고 싶을 때만 나와요.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>
+            <span><b>소환 확률은 전부 공개</b>해요. 30번째 소환까지 전설이 없으면 다음은 전설이 확정이에요.</span>
+          </li>
+        </ul>
+        <p class="fine">이 게임은 확률형 아이템(장비 소환)과 인앱 구매를 포함해요. 미성년자는 법정대리인의 동의가 필요해요.</p>
+      </div>
+      <figure class="shot">
+        <img src="a/summon.webp" alt="소원 제단 소환 화면. 일반 55%, 희귀 30%, 영웅 12%, 전설 2.7%, 신화 0.3% 확률이 적혀 있다" width="1600" height="900" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <img src="a/emblem.webp" alt="" width="420" height="435" loading="lazy">
+      <h2>성문이 뚫리기 전에<br>막아라냥!</h2>
+      <p>설치 없이 웹에서 바로 해 볼 수 있어요.</p>
+      <div class="hero-cta">
+        <a class="btn btn-main" href="https://pabang0620.github.io/nyangi-gate-play/">웹에서 바로 하기</a>
+        <a class="btn btn-ghost" href="https://play.google.com/store/apps/details?id=com.nyangi.gate">Google Play</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>냥이 성문 수비대 · 운영 네코랩(nekolab) · 문의 lwh970924@gmail.com</span>
+    <nav aria-label="약관">
+      <a href="https://pabang0620.github.io/nyangi-gate-play/policy/privacy.html">개인정보처리방침</a>
+      <a href="https://pabang0620.github.io/nyangi-gate-play/policy/terms.html">이용약관</a>
+      <a href="https://sites.google.com/view/nyangi-gate-policy/delete-account">계정 삭제</a>
+    </nav>
+  </div>
+</footer>
+
+
+<div class="cdlg" id="cdlg" role="dialog" aria-modal="true" aria-labelledby="cdlg-title" hidden>
+  <div class="cdlg-back" data-close></div>
+  <div class="cdlg-card">
+    <button type="button" class="cdlg-x" data-close aria-label="닫기">&times;</button>
+    <button type="button" class="cdlg-nav cdlg-prev" aria-label="이전 장">&#8249;</button>
+    <button type="button" class="cdlg-nav cdlg-next" aria-label="다음 장">&#8250;</button>
+    <img class="cdlg-img" id="cdlg-img" alt="">
+    <div class="cdlg-body">
+      <p class="cdlg-no" id="cdlg-no"></p>
+      <h3 id="cdlg-title"></h3>
+      <p class="cdlg-boss" id="cdlg-boss"></p>
+      <p class="cdlg-story" id="cdlg-story"></p>
+      <ul class="cdlg-mobs" id="cdlg-mobs"></ul>
+    </div>
+  </div>
+</div>
+<script>
+(function () {
+  var dlg = document.getElementById('cdlg'), data = null, cur = 0, opener = null;
+  function load() { return data ? Promise.resolve(data) : fetch('chapters.json').then(function (r) { return r.json(); }).then(function (d) { data = d; return d; }); }
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function draw() {
+    var c = data[cur];
+    document.getElementById('cdlg-img').src = 'a/ch' + pad(c.chapter) + '.webp';
+    document.getElementById('cdlg-img').alt = c.chapter + '장 ' + c.name + ' 전투 화면. ' + c.boss.name + ' 보스전';
+    document.getElementById('cdlg-no').textContent = c.chapter + '장 · ' + c.stages + '스테이지';
+    document.getElementById('cdlg-title').textContent = c.name;
+    document.getElementById('cdlg-boss').textContent = '보스 ' + c.boss.title + ' ' + c.boss.name + ' (' + c.bossStage + ')';
+    document.getElementById('cdlg-story').textContent = c.story && c.story.line ? c.story.speaker + ': ' + c.story.line : '';
+    var ul = document.getElementById('cdlg-mobs'); ul.textContent = '';
+    c.gimmicks.forEach(function (g) {
+      var li = document.createElement('li'), b = document.createElement('b'), p = document.createElement('span');
+      b.textContent = g.name; p.textContent = g.desc + (g.counter ? ' (' + g.counter + ')' : '');
+      li.appendChild(b); li.appendChild(document.createTextNode(' ')); li.appendChild(p); ul.appendChild(li);
+    });
+  }
+  function open(i, from) { load().then(function () { cur = i; opener = from || opener; draw(); dlg.hidden = false; document.body.classList.add('cdlg-on'); dlg.querySelector('.cdlg-x').focus(); }); }
+  function close() { dlg.hidden = true; document.body.classList.remove('cdlg-on'); if (opener) opener.focus(); }
+  function step(d) { cur = (cur + d + data.length) % data.length; draw(); }
+  document.querySelectorAll('.chapter').forEach(function (el) { el.addEventListener('click', function () { open(+el.getAttribute('data-i'), el); }); });
+  dlg.addEventListener('click', function (e) { if (e.target.hasAttribute('data-close')) close(); });
+  dlg.querySelector('.cdlg-prev').addEventListener('click', function () { step(-1); });
+  dlg.querySelector('.cdlg-next').addEventListener('click', function () { step(1); });
+  document.addEventListener('keydown', function (e) {
+    if (dlg.hidden) return;
+    if (e.key === 'Escape') close();
+    else if (e.key === 'ArrowLeft') step(-1);
+    else if (e.key === 'ArrowRight') step(1);
+    else if (e.key === 'Tab') { var f = dlg.querySelectorAll('button'), first = f[0], last = f[f.length - 1]; if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); } else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); } }
+  });
+  var sx = null; dlg.addEventListener('touchstart', function (e) { sx = e.touches[0].clientX; }, { passive: true });
+  dlg.addEventListener('touchend', function (e) { if (sx === null) return; var dx = e.changedTouches[0].clientX - sx; sx = null; if (Math.abs(dx) > 60) step(dx < 0 ? 1 : -1); });
+})();
+</script>
+
+</body>
+</html>

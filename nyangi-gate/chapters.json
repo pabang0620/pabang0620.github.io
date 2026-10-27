@@ -1,0 +1,388 @@
+[
+  {
+    "chapter": 1,
+    "name": "푸른 들판",
+    "theme": "grass",
+    "stages": 4,
+    "bossStage": "폭군의 들녘",
+    "boss": {
+      "id": "ironfang",
+      "name": "강철엄니",
+      "title": "평원의 폭군"
+    },
+    "gimmicks": [
+      {
+        "id": "wolf",
+        "name": "그림자 늑대",
+        "tag": "빠름",
+        "desc": "순식간에 지나가는 빠른 적",
+        "counter": "병영으로 붙잡기 · 서리 첨탑 둔화"
+      },
+      {
+        "id": "orc",
+        "name": "오크 방패병",
+        "tag": "물리 방어",
+        "desc": "화살·포탄·병사 피해 50% 감소",
+        "counter": "마법탑"
+      }
+    ],
+    "story": {
+      "speaker": "치즈",
+      "line": "고갯길 초소에 슬라임이 몰려온다냥! 성문을 지켜야 해!"
+    },
+    "hardBossStage3Star": "대포탑 없이"
+  },
+  {
+    "chapter": 2,
+    "name": "어둠 숲",
+    "theme": "forest",
+    "stages": 4,
+    "bossStage": "대족장의 진영",
+    "boss": {
+      "id": "grak",
+      "name": "그락",
+      "title": "고블린 대족장"
+    },
+    "gimmicks": [
+      {
+        "id": "bat",
+        "name": "흡혈 박쥐",
+        "tag": "비행",
+        "desc": "비행 · 대포탑과 병영이 못 막음",
+        "counter": "궁수탑 · 마법탑"
+      },
+      {
+        "id": "shaman",
+        "name": "고블린 주술사",
+        "tag": "마법 저항·치유",
+        "desc": "3초마다 주변 적 치유 · 마법 피해 50% 감소",
+        "counter": "궁수탑 · 대포탑으로 먼저 처치"
+      },
+      {
+        "id": "golem",
+        "name": "바위 골렘",
+        "tag": "정예",
+        "desc": "정예 · 체력이 아주 높음",
+        "counter": "병영으로 붙잡고 강화한 탑을 모으기"
+      }
+    ],
+    "story": {
+      "speaker": "까망",
+      "line": "숲은 내 구역이야. 박쥐는 대포로 못 맞히니까 궁수탑을 섞어."
+    },
+    "hardBossStage3Star": "탑 8개 이하"
+  },
+  {
+    "chapter": 3,
+    "name": "무너진 성채",
+    "theme": "ruin",
+    "stages": 4,
+    "bossStage": "심연의 문",
+    "boss": {
+      "id": "vargas",
+      "name": "바르가스",
+      "title": "심연룡"
+    },
+    "gimmicks": [
+      {
+        "id": "skeleton",
+        "name": "해골 병사",
+        "tag": "부활",
+        "desc": "쓰러지면 체력 절반으로 한 번 부활",
+        "counter": "화력을 모아 두 번 처치"
+      },
+      {
+        "id": "imp",
+        "name": "화염 임프",
+        "tag": "비행·마법 저항",
+        "desc": "비행 · 마법 피해 40% 감소",
+        "counter": "궁수탑"
+      },
+      {
+        "id": "cursed",
+        "name": "저주받은 갑옷",
+        "tag": "정예·물리 방어",
+        "desc": "정예 · 화살·포탄 피해 70% 감소",
+        "counter": "마법탑 필수"
+      }
+    ],
+    "story": {
+      "speaker": "구름",
+      "line": "해골은 한 번 되살아나. 끝까지 지켜봐야 해."
+    },
+    "hardBossStage3Star": "대포탑 없이"
+  },
+  {
+    "chapter": 4,
+    "name": "얼음 협곡",
+    "theme": "snow",
+    "stages": 6,
+    "bossStage": "얼음 궁전",
+    "boss": {
+      "id": "frosna",
+      "name": "프로스나",
+      "title": "빙결 여왕"
+    },
+    "gimmicks": [
+      {
+        "id": "frostwolf",
+        "name": "서리 늑대",
+        "tag": "빠름",
+        "desc": "순식간에 지나가는 빠른 적",
+        "counter": "병영으로 붙잡기 · 서리 첨탑 둔화"
+      },
+      {
+        "id": "icewisp",
+        "name": "얼음 정령",
+        "tag": "비행·죽을 때 탑 빙결",
+        "desc": "비행 · 쓰러진 자리 주변 탑을 1.6초 얼림",
+        "counter": "궁수탑을 여러 곳에 나눠 짓기"
+      },
+      {
+        "id": "yeti",
+        "name": "설인",
+        "tag": "정예·범위 공격",
+        "desc": "정예 · 막는 병사와 영웅 주변을 함께 공격",
+        "counter": "병영 강화 · 원거리 탑"
+      }
+    ],
+    "story": {
+      "speaker": "구름",
+      "line": "얼음 정령이 터지면 근처 탑이 얼어붙어. 탑 사이를 조금 띄워 짓자."
+    },
+    "hardBossStage3Star": "대포탑 없이"
+  },
+  {
+    "chapter": 5,
+    "name": "타는 사막",
+    "theme": "desert",
+    "stages": 6,
+    "bossStage": "사막왕의 무덤",
+    "boss": {
+      "id": "setka",
+      "name": "세트카",
+      "title": "사막왕"
+    },
+    "gimmicks": [
+      {
+        "id": "scorpion",
+        "name": "모래 전갈",
+        "tag": "물리 방어·잠행",
+        "desc": "물리 피해 40% 감소 · 땅속에 숨어 병사를 지나침",
+        "counter": "마법탑을 길 따라 넓게"
+      },
+      {
+        "id": "beetle",
+        "name": "갑옷 풍뎅이",
+        "tag": "단단함·분열",
+        "desc": "물리 피해 50% 감소 · 쓰러지면 새끼 2마리",
+        "counter": "마법탑 · 새끼는 대포탑"
+      },
+      {
+        "id": "harpy",
+        "name": "하피",
+        "tag": "비행·빠름",
+        "desc": "비행 · 빠름",
+        "counter": "궁수탑 여러 개"
+      }
+    ],
+    "story": {
+      "speaker": "까망",
+      "line": "전갈이 땅속으로 숨으면 아무것도 안 맞아. 다시 나올 때를 노려."
+    },
+    "hardBossStage3Star": "목숨을 하나도 잃지 않기"
+  },
+  {
+    "chapter": 6,
+    "name": "안개 늪",
+    "theme": "swamp",
+    "stages": 6,
+    "bossStage": "늪의 심장",
+    "boss": {
+      "id": "morga",
+      "name": "모르가",
+      "title": "늪의 마녀"
+    },
+    "gimmicks": [
+      {
+        "id": "toad",
+        "name": "독두꺼비",
+        "tag": "죽으면 독 웅덩이",
+        "desc": "쓰러진 자리에 4초 동안 독 웅덩이",
+        "counter": "원거리 탑 · 영웅은 웅덩이 피하기"
+      },
+      {
+        "id": "swampwitch",
+        "name": "늪 마녀",
+        "tag": "마법 저항·보호막",
+        "desc": "마법 피해 60% 감소 · 5초마다 주변 적에 보호막",
+        "counter": "궁수탑 · 대포탑으로 마녀 먼저"
+      }
+    ],
+    "story": {
+      "speaker": "치즈",
+      "line": "두꺼비가 죽은 자리엔 독 웅덩이가 생겨. 병사를 조금 물려 세우자!"
+    },
+    "hardBossStage3Star": "목숨을 하나도 잃지 않기"
+  },
+  {
+    "chapter": 7,
+    "name": "용암 화산",
+    "theme": "volcano",
+    "stages": 6,
+    "bossStage": "거인의 화로",
+    "boss": {
+      "id": "ignis",
+      "name": "이그니스",
+      "title": "화염 거인"
+    },
+    "gimmicks": [
+      {
+        "id": "salamander",
+        "name": "불도롱뇽",
+        "tag": "빠름·마법 저항·화상 면역",
+        "desc": "빠름 · 마법 피해 60% 감소 · 화상 면역",
+        "counter": "병영으로 붙잡고 궁수탑 · 대포탑 (화상은 안 통함)"
+      },
+      {
+        "id": "ember",
+        "name": "불씨 정령",
+        "tag": "",
+        "desc": "용암 골렘이 쓰러지면 나옴 · 화상 면역",
+        "counter": "대포탑 · 궁수탑"
+      },
+      {
+        "id": "lavagolem",
+        "name": "용암 골렘",
+        "tag": "정예·분열",
+        "desc": "정예 · 화상 면역 · 쓰러지면 불씨 정령 3마리",
+        "counter": "마법탑 · 불씨는 대포탑"
+      }
+    ],
+    "story": {
+      "speaker": "까망",
+      "line": "불도롱뇽은 화상을 안 입어. 화염 포탑보다 다른 탑이 나아."
+    },
+    "hardBossStage3Star": "아이템(냥펀치·증원·총출동) 없이"
+  },
+  {
+    "chapter": 8,
+    "name": "공허의 성",
+    "theme": "void",
+    "stages": 6,
+    "bossStage": "공허의 왕좌",
+    "boss": {
+      "id": "nox",
+      "name": "녹스",
+      "title": "공허의 왕"
+    },
+    "gimmicks": [
+      {
+        "id": "shadow",
+        "name": "그림자 냥",
+        "tag": "은신(피해 -55%)",
+        "desc": "가끔 모습을 감춰 받는 피해 55% 감소",
+        "counter": "모습이 보일 때 스킬 · 주문"
+      },
+      {
+        "id": "voidknight",
+        "name": "공허 기사",
+        "tag": "정예·순간이동",
+        "desc": "정예 · 6초마다 앞으로 순간이동 · 물리 피해 50% 감소",
+        "counter": "성문 가까이에도 마법탑"
+      }
+    ],
+    "story": {
+      "speaker": "구름",
+      "line": "그림자 냥은 은신하면 피해를 거의 안 받아. 모습을 드러낼 때 몰아쳐!"
+    },
+    "hardBossStage3Star": "아이템(냥펀치·증원·총출동) 없이"
+  },
+  {
+    "chapter": 9,
+    "name": "하늘 정원",
+    "theme": "sky",
+    "stages": 6,
+    "bossStage": "폭풍의 눈",
+    "boss": {
+      "id": "aeris",
+      "name": "아에리스",
+      "title": "폭풍의 로크"
+    },
+    "gimmicks": [
+      {
+        "id": "windsprite",
+        "name": "바람 정령",
+        "tag": "비행·주변 지상 적 가속",
+        "desc": "비행 · 4초마다 주변 지상 적을 빠르게",
+        "counter": "궁수탑으로 먼저 처치"
+      },
+      {
+        "id": "cloudthief",
+        "name": "구름 도적",
+        "tag": "화살·포탄 35% 회피",
+        "desc": "화살·포탄을 35% 회피",
+        "counter": "마법탑 · 병영 · 영웅"
+      },
+      {
+        "id": "griffin",
+        "name": "그리폰",
+        "tag": "정예·비행",
+        "desc": "정예 · 비행",
+        "counter": "강화한 궁수탑 · 마법탑을 모으기"
+      }
+    ],
+    "story": {
+      "speaker": "까망",
+      "line": "구름 도적은 화살과 포탄을 잘 피해. 마법탑이나 영웅으로 잡자."
+    },
+    "hardBossStage3Star": "탑 8개 이하"
+  },
+  {
+    "chapter": 10,
+    "name": "시간의 탑",
+    "theme": "clock",
+    "stages": 6,
+    "bossStage": "시간의 정점",
+    "boss": {
+      "id": "chronos",
+      "name": "크로노스",
+      "title": "시간의 지배자"
+    },
+    "gimmicks": [
+      {
+        "id": "clocksoldier",
+        "name": "태엽 병사",
+        "tag": "물리 방어·한 번 되감기",
+        "desc": "물리 피해 55% 감소 · 체력 30% 아래에서 한 번 60%로 회복",
+        "counter": "마법탑 집중"
+      },
+      {
+        "id": "cog",
+        "name": "톱니",
+        "tag": "",
+        "desc": "톱니 야수가 쓰러지면 나옴 · 물리 피해 40% 감소",
+        "counter": "마법탑 · 대포탑"
+      },
+      {
+        "id": "chronomage",
+        "name": "시간 술사",
+        "tag": "주변 탑 공격 속도 -45%",
+        "desc": "주변 탑 공격 속도 45% 감소 · 마법 피해 55% 감소",
+        "counter": "사거리 긴 궁수탑 · 영웅 · 주문으로 먼저"
+      },
+      {
+        "id": "gearbeast",
+        "name": "톱니 야수",
+        "tag": "정예·분열",
+        "desc": "정예 · 물리 피해 50% 감소 · 쓰러지면 톱니 3개",
+        "counter": "마법탑 · 톱니는 대포탑"
+      }
+    ],
+    "story": {
+      "speaker": "구름",
+      "line": "태엽 병사는 쓰러지기 직전에 한 번 되감겨. 끝까지 몰아쳐야 해."
+    },
+    "hardBossStage3Star": "탑 8개 이하"
+  }
+]

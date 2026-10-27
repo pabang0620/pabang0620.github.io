@@ -2,6 +2,7 @@
 > 개인 게임 개발 브랜드. 웹과 안드로이드에서 함께 즐기는 모바일 게임을 만듭니다.
 
 ## 게임
+- [냥이 성문 수비대 소개](https://pabang0620.github.io/nyangi-gate/): 게임 소개, 10개 장의 보스와 몬스터
 - [냥이 성문 수비대](https://pabang0620.github.io/nyangi-gate-play/): 고양이 영웅들로 성문을 지키는 타워 디펜스. 레이드와 친구 협동을 지원합니다.
 - [냥박자](https://pabang0620.github.io/nyang-bakja-play/): 고양이와 박자를 맞추는 리듬 액션
 - [dotRPG 정책](https://pabang0620.github.io/dotrpg-policy/): 도트 RPG의 약관, 개인정보, 확률 정보
