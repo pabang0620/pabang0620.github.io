@@ -236,3 +236,11 @@ body.cdlg-on { overflow: hidden; }
 .cdlg-prev { left: 10px; } .cdlg-next { right: 10px; }
 .cdlg-x:hover, .cdlg-nav:hover { border-color: var(--gold); color: var(--gold); }
 @media (prefers-reduced-motion: reduce) { .chapter { transition: none; } }
+
+/* notices (data in notices.json, newest first) */
+.notice { padding: clamp(56px, 9vw, 110px) var(--gutter); background: var(--ink-2); border-top: 1px solid var(--line); }
+.notice-list { list-style: none; margin: 28px 0 0; padding: 0; display: grid; gap: 14px; max-width: 760px; }
+.notice-list li { padding: 18px 22px; border: 1px solid var(--line); border-radius: 12px; background: var(--ink); display: grid; gap: 6px; }
+.notice-list time { color: var(--gold); font-size: 0.9rem; }
+.notice-list h3 { font-size: 1.3rem; }
+.notice-list p, .notice-empty { color: var(--cream-2); font-size: 0.98rem; }

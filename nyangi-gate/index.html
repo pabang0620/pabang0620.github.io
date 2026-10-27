@@ -27,6 +27,7 @@
     <a href="#cats">영웅</a>
     <a href="#adventure">모험</a>
     <a href="#online">대결</a>
+    <a href="#notice">공지</a>
     <a class="btn btn-main" href="https://pabang0620.github.io/nyangi-gate-play/" style="min-height:40px;padding:0 18px;font-size:1rem">바로 플레이</a>
   </nav>
 </header>
@@ -198,6 +199,13 @@
     </div>
   </section>
 
+  <section class="notice" id="notice">
+    <div class="wrap">
+      <h2>공지</h2>
+      <ul class="notice-list" id="notice-list"><li class="notice-empty">공지를 불러오는 중이에요.</li></ul>
+    </div>
+  </section>
+
   <section class="final">
     <div class="wrap">
       <img src="a/emblem.webp" alt="" width="420" height="435" loading="lazy">
@@ -223,6 +231,20 @@
 </footer>
 
 
+<script>
+(function () {
+  var ul = document.getElementById('notice-list');
+  fetch('notices.json').then(function (r) { return r.json(); }).then(function (list) {
+    ul.textContent = '';
+    if (!list.length) { var e = document.createElement('li'); e.className = 'notice-empty'; e.textContent = '아직 공지가 없어요.'; ul.appendChild(e); return; }
+    list.forEach(function (n) {
+      var li = document.createElement('li'), d = document.createElement('time'), h = document.createElement('h3'), p = document.createElement('p');
+      d.textContent = n.date; d.setAttribute('datetime', n.date); h.textContent = n.title; p.textContent = n.body;
+      li.appendChild(d); li.appendChild(h); li.appendChild(p); ul.appendChild(li);
+    });
+  }).catch(function () { ul.firstChild.textContent = '공지를 불러오지 못했어요. 잠시 뒤에 다시 열어 주세요.'; });
+})();
+</script>
 <div class="cdlg" id="cdlg" role="dialog" aria-modal="true" aria-labelledby="cdlg-title" hidden>
   <div class="cdlg-back" data-close></div>
   <div class="cdlg-card">
